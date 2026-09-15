@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Kusuma Vijay Dyavakkalavar | Portfolio
+    </title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        /* =====================================================
+           BODY
+        ===================================================== */
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(90, 75, 220, 0.16),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 20% 60%,
+                    rgba(50, 75, 150, 0.08),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #071020,
+                    #0b172d,
+                    #071020
+                );
+
+            color: #ffffff;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        header {
+
+            height: 68px;
+
+            background:
+                rgba(5, 14, 30, 0.94);
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 36px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            backdrop-filter: blur(15px);
+
+        }
+
+
+        /* LOGO */
+
+        .logo-section {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            white-space: nowrap;
+
+        }
+
+
+        .logo {
+
+            width: 35px;
+
+            height: 35px;
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #4f46e5,
+                    #7564ff
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 20px;
+
+        }
+
+
+        /* NAVIGATION */
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 29px;
+
+        }
+
+
+        nav a {
+
+            color: #e1e4ed;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            padding: 25px 0;
+
+            position: relative;
+
+            transition: 0.3s;
+
+        }
+
+
+        nav a:hover {
+
+            color: #8271ff;
+
+        }
+
+
+        nav a.active {
+
+            color: #8271ff;
+
+        }
+
+
+        nav a.active::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 9px;
+
+            height: 2px;
+
+            background: #705cff;
+
+            border-radius: 5px;
+
+        }
+
+
+        .theme-icon {
+
+            font-size: 17px;
+
+            color: #ffffff;
+
+        }
+
+
+        /* =====================================================
+           MAIN CONTAINER
+        ===================================================== */
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1020px;
+
+            margin: auto;
+
+            padding: 58px 28px 35px;
+
+        }
+
+
+        /* =====================================================
+           HERO SECTION
+        ===================================================== */
+
+        .hero {
+
+            display: grid;
+
+            grid-template-columns:
+                1.15fr
+                0.85fr;
+
+            gap: 42px;
+
+            align-items: center;
+
+            margin-bottom: 54px;
+
+        }
+
+
+        /* HELLO */
+
+        .hello {
+
+            display: inline-block;
+
+            background:
+                rgba(47, 61, 88, 0.65);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+            padding: 7px 13px;
+
+            border-radius: 20px;
+
+            color: #e9ebf4;
+
+            font-size: 12px;
+
+            margin-bottom: 16px;
+
+        }
+
+
+        /* NAME */
+
+        .hero h1 {
+
+            font-size: 44px;
+
+            line-height: 1.13;
+
+            margin-bottom: 13px;
+
+            font-weight: 700;
+
+        }
+
+
+        .hero h1 span {
+
+            color: #7867ff;
+
+        }
+
+
+        /* SUBTITLE */
+
+        .subtitle {
+
+            font-size: 17px;
+
+            color: #f0f2f8;
+
+            margin-bottom: 17px;
+
+        }
+
+
+        /* DESCRIPTION */
+
+        .description {
+
+            max-width: 530px;
+
+            color: #adb7ca;
+
+            line-height: 1.75;
+
+            font-size: 14px;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        /* =====================================================
+           MINI CONTACT BOXES
+        ===================================================== */
+
+        .mini-contact {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .mini-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 9px 11px;
+
+            background:
+                rgba(20, 35, 61, 0.75);
+
+            border:
+                1px solid
+                rgba(90, 115, 160, 0.28);
+
+            border-radius: 7px;
+
+            color: #dce2ee;
+
+            font-size: 11px;
+
+        }
+
+
+        .mini-box i {
+
+            color: #7867ff;
+
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 14px;
+
+        }
+
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 9px;
+
+            padding: 12px 17px;
+
+            border-radius: 7px;
+
+            border:
+                1px solid
+                #6557d9;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn-primary {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #5748d8,
+                    #735eff
+                );
+
+            border: none;
+
+        }
+
+
+        .btn:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 25px
+                rgba(91,75,220,0.28);
+
+        }
+
+
+        /* =====================================================
+           PROFILE PHOTO
+        ===================================================== */
+
+        .photo-area {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+        .photo-frame {
+
+            width: 385px;
+
+            height: 510px;
+
+            padding: 3px;
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6455ee,
+                    #302687,
+                    #7967ff
+                );
+
+            box-shadow:
+                0 0 28px
+                rgba(92,76,255,0.36);
+
+        }
+
+
+        .photo-frame img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 14px;
+
+            display: block;
+
+        }
+
+
+        /* =====================================================
+           GENERAL CARD
+        ===================================================== */
+
+        .card {
+
+            background:
+                rgba(12, 27, 48, 0.80);
+
+            border:
+                1px solid
+                rgba(91,113,156,0.32);
+
+            border-radius: 12px;
+
+            padding: 19px;
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255,255,255,0.02);
+
+        }
+
+
+        /* =====================================================
+           SECTION TITLE
+        ===================================================== */
+
+        .section-title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            font-size: 18px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .section-title i {
+
+            color: #7867ff;
+
+            font-size: 19px;
+
+        }
+
+
+        /* =====================================================
+           SKILLS + PROJECTS
+        ===================================================== */
+
+        .top-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                0.75fr
+                1.25fr;
+
+            gap: 14px;
+
+            margin-bottom: 14px;
+
+        }
+
+
+        /* =====================================================
+           SKILLS
+        ===================================================== */
+
+        .skills {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+        }
+
+
+        .skill {
+
+            min-width: 83px;
+
+            padding: 9px 10px;
+
+            border-radius: 7px;
+
+            background:
+                rgba(29,45,72,0.75);
+
+            border:
+                1px solid
+                rgba(95,119,163,0.28);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+
+            font-size: 11px;
+
+            color: #e5e9f2;
+
+        }
+
+
+        .skill i {
+
+            color: #7180ff;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =====================================================
+           PROJECT HEADER
+        ===================================================== */
+
+        .project-heading {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .view-all {
+
+            text-decoration: none;
+
+            color: #e0e3f0;
+
+            font-size: 11px;
+
+            border:
+                1px solid
+                #4d54a6;
+
+            padding: 9px 12px;
+
+            border-radius: 7px;
+
+        }
+
+
+        .view-all:hover {
+
+            color: #8272ff;
+
+        }
+
+
+        /* =====================================================
+           PROJECT GRID
+        ===================================================== */
+
+        .project-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 13px;
+
+        }
+
+
+        .project {
+
+            min-height: 137px;
+
+            display: flex;
+
+            gap: 12px;
+
+            padding: 14px;
+
+            background:
+                rgba(25,43,70,0.66);
+
+            border:
+                1px solid
+                rgba(82,106,149,0.28);
+
+            border-radius: 10px;
+
+        }
+
+
+        /* PROJECT ICON */
+
+        .project-icon {
+
+            width: 55px;
+
+            height: 55px;
+
+            min-width: 55px;
+
+            border-radius: 7px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 23px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #5145d9,
+                    #7767ff
+                );
+
+        }
+
+
+        .project:nth-child(2)
+        .project-icon {
+
+            background: #000000;
+
+        }
+
+
+        .project:nth-child(3)
+        .project-icon {
+
+            background: #19bcae;
+
+        }
+
+
+        .project:nth-child(4)
+        .project-icon {
+
+            background: #ff663e;
+
+        }
+
+
+        .project h3 {
+
+            font-size: 14px;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .project p {
+
+            font-size: 10.5px;
+
+            line-height: 1.5;
+
+            color: #aeb8ca;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        /* PROJECT TAGS */
+
+        .tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 6px;
+
+        }
+
+
+        .tag {
+
+            font-size: 9px;
+
+            padding: 5px 8px;
+
+            border-radius: 5px;
+
+            background:
+                rgba(66,84,120,0.45);
+
+            color: #dce1ec;
+
+        }
+
+
+        /* =====================================================
+           BOTTOM GRID
+        ===================================================== */
+
+        .bottom-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.1fr
+                1fr
+                1fr;
+
+            gap: 14px;
+
+        }
+
+
+        /* =====================================================
+           CERTIFICATIONS
+        ===================================================== */
+
+        .certifications {
+
+            list-style: none;
+
+        }
+
+
+        .certifications li {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 9px;
+
+            color: #dce1ed;
+
+            font-size: 11px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .certifications i {
+
+            color: #7766ff;
+
+            margin-top: 2px;
+
+        }
+
+
+        /* =====================================================
+           RESUME
+        ===================================================== */
+
+        .resume-box {
+
+            background:
+                rgba(26,43,71,0.66);
+
+            border:
+                1px solid
+                rgba(86,110,153,0.30);
+
+            border-radius: 10px;
+
+            padding: 13px;
+
+        }
+
+
+        .resume-icon {
+
+            width: 34px;
+
+            height: 34px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 6px;
+
+            background: #735cff;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .resume-name {
+
+            font-size: 10px;
+
+            color: #e0e4ed;
+
+            word-break: break-word;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .updated {
+
+            color: #909caf;
+
+            font-size: 9px;
+
+            margin-bottom: 13px;
+
+        }
+
+
+        .download {
+
+            display: block;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            border:
+                1px solid
+                #6558d9;
+
+            color: #8272ff;
+
+            padding: 9px;
+
+            border-radius: 7px;
+
+            font-size: 10px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .download:hover {
+
+            background:
+                rgba(92,75,220,0.14);
+
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-list {
+
+            list-style: none;
+
+        }
+
+
+        .contact-list li {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            color: #d9dfeb;
+
+            font-size: 11px;
+
+            line-height: 1.5;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .contact-list i {
+
+            color: #8171ff;
+
+            width: 16px;
+
+            margin-top: 2px;
+
+        }
+
+
+        .contact-list a {
+
+            color: #d9dfeb;
+
+            text-decoration: none;
+
+        }
+
+
+        .contact-list a:hover {
+
+            color: #8171ff;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            height: 65px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background:
+                rgba(3,11,25,0.72);
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.05);
+
+            color: #8e98ad;
+
+            font-size: 11px;
+
+            margin-top: 34px;
+
+        }
+
+
+        /* =====================================================
+           TOP BUTTON
+        ===================================================== */
+
+        .top-button {
+
+            position: fixed;
+
+            right: 18px;
+
+            bottom: 18px;
+
+            width: 42px;
+
+            height: 42px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #6755dc;
+
+            color: white;
+
+            text-decoration: none;
+
+            box-shadow:
+                0 5px 20px
+                rgba(74,59,190,0.42);
+
+            z-index: 500;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE - TABLET
+        ===================================================== */
+
+        @media(max-width: 900px) {
+
+            header {
+
+                padding: 0 20px;
+
+            }
+
+
+            nav {
+
+                gap: 15px;
+
+            }
+
+
+            .hero {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .photo-area {
+
+                order: -1;
+
+            }
+
+
+            .top-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .bottom-grid {
+
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+            }
+
+
+            .photo-frame {
+
+                width: 330px;
+
+                height: 430px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE - MOBILE
+        ===================================================== */
+
+        @media(max-width: 650px) {
+
+            header {
+
+                height: auto;
+
+                padding: 14px;
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+
+            .logo-section {
+
+                font-size: 14px;
+
+            }
+
+
+            nav {
+
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+            }
+
+
+            nav a {
+
+                font-size: 10px;
+
+                padding: 4px;
+
+            }
+
+
+            nav a.active::after {
+
+                bottom: -4px;
+
+            }
+
+
+            .container {
+
+                padding:
+                    35px
+                    15px;
+
+            }
+
+
+            .hero {
+
+                margin-bottom: 38px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 34px;
+
+            }
+
+
+            .subtitle {
+
+                font-size: 15px;
+
+            }
+
+
+            .description {
+
+                font-size: 13px;
+
+            }
+
+
+            .photo-frame {
+
+                width: 280px;
+
+                height: 370px;
+
+            }
+
+
+            .mini-contact {
+
+                flex-direction: column;
+
+            }
+
+
+            .hero-buttons {
+
+                flex-direction: column;
+
+            }
+
+
+            .btn {
+
+                width: 100%;
+
+            }
+
+
+            .project-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .bottom-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .project-heading {
+
+                align-items: flex-start;
+
+                gap: 10px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body id="home">
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header>
+
+    <div class="logo-section">
+
+        <div class="logo">
+            K
+        </div>
+
+        <span>
+            Kusuma Dyavakkalavar
+        </span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home"
+           class="active">
+            Home
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#skills">
+            Skills
+        </a>
+
+        <a href="#projects">
+            Projects
+        </a>
+
+        <a href="#certifications">
+            Certifications
+        </a>
+
+        <a href="#resume">
+            Resume
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+        <span class="theme-icon">
+            ◐
+        </span>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="container">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero"
+         id="about">
+
+
+    <!-- LEFT -->
+
+    <div class="hero-content">
+
+
+        <div class="hello">
+            Hello, I'm 👋
+        </div>
+
+
+        <h1>
+
+            Kusuma
+
+            <br>
+
+            <span>
+                Vijay Dyavakkalavar
+            </span>
+
+        </h1>
+
+
+        <div class="subtitle">
+
+            BCA Graduate |
+            Aspiring Software Developer
+
+        </div>
+
+
+        <p class="description">
+
+            Passionate about building smart,
+            efficient and user-friendly
+            applications using Python,
+            Flask, AI and modern web
+            technologies.
+
+        </p>
+
+
+        <!-- CONTACT MINI -->
+
+        <div class="mini-contact">
+
+
+            <div class="mini-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                kusumadyavakkalavar2006@gmail.com
+
+            </div>
+
+
+            <div class="mini-box">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Rattihalli, Haveri District, Karnataka
+
+            </div>
+
+
+            <div class="mini-box">
+
+                <i class="fa-brands fa-github"></i>
+
+                github.com/KusumaVD
+
+            </div>
+
+
+            <div class="mini-box">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                linkedin.com/in/kusuma-dyavakkalavar
+
+            </div>
+
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="hero-buttons">
+
+
+            <a href="#projects"
+               class="btn btn-primary">
+
+                View My Projects
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="Kusuma_Vijay_Dyavakkalavar_Resume.pdf"
+               class="btn"
+               download>
+
+                Download Resume
+
+                <i class="fa-solid fa-download"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- RIGHT PHOTO -->
+
+    <div class="photo-area">
+
+        <div class="photo-frame">
+
+            <!-- YOUR PHOTO -->
+            <img src="photo.jpg"
+                 alt="Kusuma Vijay Dyavakkalavar">
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     SKILLS + PROJECTS
+========================================================= -->
+
+<div class="top-grid">
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section class="card"
+         id="skills">
+
+
+    <h2 class="section-title">
+
+        <i class="fa-solid fa-code"></i>
+
+        Skills & Technologies
+
+    </h2>
+
+
+    <div class="skills">
+
+
+        <div class="skill">
+            <i class="fa-brands fa-python"></i>
+            Python
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-c"></i>
+            C
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-java"></i>
+            Java
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            HTML
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            CSS
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-js"></i>
+            JavaScript
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-flask"></i>
+            Flask
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-database"></i>
+            SQLite
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-database"></i>
+            MySQL
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-brain"></i>
+            AI / ML
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-git-alt"></i>
+            Git
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-code"></i>
+            VS Code
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-laptop-code"></i>
+            PyCharm
+        </div>
+
+
+        <div class="skill">
+            <i class="fa-solid fa-palette"></i>
+            Canva
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section class="card"
+         id="projects">
+
+
+    <div class="project-heading">
+
+
+        <h2 class="section-title">
+
+            <i class="fa-regular fa-folder"></i>
+
+            Featured Projects
+
+        </h2>
+
+
+        <a href="#projects"
+           class="view-all">
+
+            View All Projects
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="project-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project">
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    AI Smart Cart
+                </h3>
+
+
+                <p>
+
+                    E-commerce web app with
+                    AI-based product
+                    recommendations.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Python
+                    </span>
+
+                    <span class="tag">
+                        Flask
+                    </span>
+
+                    <span class="tag">
+                        SQLite
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project">
+
+
+            <div class="project-icon">
+
+                <i class="fa-brands fa-amazon"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Amazon Clone
+                </h3>
+
+
+                <p>
+
+                    Responsive front-end
+                    Amazon clone website.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        HTML
+                    </span>
+
+                    <span class="tag">
+                        CSS
+                    </span>
+
+                    <span class="tag">
+                        JavaScript
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project">
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-comments"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    AI College Chatbot
+                </h3>
+
+
+                <p>
+
+                    Intelligent chatbot for
+                    student queries and
+                    information.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Python
+                    </span>
+
+                    <span class="tag">
+                        NLP
+                    </span>
+
+                    <span class="tag">
+                        Flask
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PROJECT 4 -->
+
+        <div class="project">
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-burger"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Food Delivery Website
+                </h3>
+
+
+                <p>
+
+                    Food ordering website
+                    with cart and order
+                    tracking.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        HTML
+                    </span>
+
+                    <span class="tag">
+                        CSS
+                    </span>
+
+                    <span class="tag">
+                        JavaScript
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     CERTIFICATIONS + RESUME + CONTACT
+========================================================= -->
+
+<div class="bottom-grid">
+
+
+<!-- =========================================================
+     CERTIFICATIONS
+========================================================= -->
+
+<section class="card"
+         id="certifications">
+
+
+    <h2 class="section-title">
+
+        <i class="fa-solid fa-award"></i>
+
+        Certifications
+
+    </h2>
+
+
+    <ul class="certifications">
+
+
+        <li>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            Python Programming – (Udemy)
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            Web Development Bootcamp – (Udemy)
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            AI & Machine Learning – (Coursera)
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            SQL for Beginners – (HackerRank)
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            Git & GitHub – (Great Learning)
+
+        </li>
+
+
+    </ul>
+
+</section>
+
+
+
+<!-- =========================================================
+     RESUME
+========================================================= -->
+
+<section class="card"
+         id="resume">
+
+
+    <h2 class="section-title">
+
+        <i class="fa-regular fa-file-lines"></i>
+
+        Resume
+
+    </h2>
+
+
+    <div class="resume-box">
+
+
+        <div class="resume-icon">
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+        </div>
+
+
+        <div class="resume-name">
+
+            Kusuma_Vijay_Dyavakkalavar_Resume.pdf
+
+        </div>
+
+
+        <div class="updated">
+
+            Updated: May 2025
+
+        </div>
+
+
+        <a href="Kusuma_Vijay_Dyavakkalavar_Resume.pdf"
+           class="download"
+           download>
+
+            <i class="fa-solid fa-download"></i>
+
+            Download Resume
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="card"
+         id="contact">
+
+
+    <h2 class="section-title">
+
+        <i class="fa-regular fa-envelope"></i>
+
+        Contact Me
+
+    </h2>
+
+
+    <ul class="contact-list">
+
+
+        <li>
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <a href="mailto:kusumadyavakkalavar2006@gmail.com">
+
+                kusumadyavakkalavar2006@gmail.com
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-phone"></i>
+
+            +91 9148026711
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Rattihalli, Haveri District,
+            Karnataka, India
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-brands fa-linkedin"></i>
+
+            <a href="https://linkedin.com/in/kusuma-dyavakkalavar"
+               target="_blank">
+
+                linkedin.com/in/kusuma-dyavakkalavar
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <i class="fa-brands fa-github"></i>
+
+            <a href="https://github.com/KusumaVD"
+               target="_blank">
+
+                github.com/KusumaVD
+
+            </a>
+
+        </li>
+
+
+    </ul>
+
+</section>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    © 2025 Kusuma Vijay Dyavakkalavar.
+    All Rights Reserved.
+
+</footer>
+
+
+
+<!-- =========================================================
+     SCROLL TOP
+========================================================= -->
+
+<a href="#home"
+   class="top-button">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+
+</body>
+
+</html>
